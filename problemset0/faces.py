@@ -3,8 +3,6 @@ def main():
     print(convert(text))
 
 def convert(word):
-    word = word.replace(":)", "🙂")
-    word = word.replace(":(", "🙁")
-    return word
+    return word.replace(":)", "🙂").replace(":(", "🙁")
 
 main()
