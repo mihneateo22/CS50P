@@ -18,8 +18,7 @@ match y:
         result = x * z
     case "/":
         if z == 0:
-            print("Error, you can not divide a number to 0!")
-            sys.exit()
+            sys.exit("Error, you can not divide a number to 0!")
         else:
             result = x / z
 print(f"{result:.1f}")
