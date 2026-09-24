@@ -9,6 +9,6 @@ elif name.endswith(".pdf"):
     print("application/pdf")
 elif name.endswith(".txt"):
     print("text/plain")
-elif name.endswith("zip"):
+elif name.endswith(".zip"):
     print("application/zip")
 else: print("application/octet-stream")
