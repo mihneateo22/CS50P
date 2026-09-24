@@ -1,4 +1,4 @@
-name = input("File name: ")
+name = input("File name: ").lower()
 if name.endswith(".gif"):
     print("image/gif")
 elif name.endswith(".jpg") or name.endswith(".jpeg"):
