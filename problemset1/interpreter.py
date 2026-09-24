@@ -1,3 +1,5 @@
+import sys
+
 exp = input("Expression: ")
 x,y,z = exp.split()
 
@@ -5,16 +7,20 @@ x,y,z = exp.split()
 x = int(x)
 z = int(z)
 
+result = 0
+
 match y:
     case "+":
-        print(f"ANSWER : {float(x + z)}")
+        result = x + z
     case "-":
-        print(f"ANSWER : {float(x - z)}")
+        result = x - z
     case "*":
-        print(f"ANSWER : {float(x * z)}")
+        result = x * z
     case "/":
         if z == 0:
             print("Error, you can not divide a number to 0!")
+            sys.exit()
         else:
-            print(f"ANSWER : {float(x / z)}")
+            result = x / z
+print(f"{result:.1f}")
 
