@@ -25,6 +25,5 @@ def is_valid(s):
             if character in string.ascii_uppercase and count_digits != 0:
                 return False
     return True
-        
-        
+
 main()
