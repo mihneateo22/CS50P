@@ -1,3 +1,4 @@
+
 while True:
     try:
         fraction = input("Fraction: ")
@@ -11,7 +12,7 @@ while True:
         if x > y:
             print("The tank can not be more than FULL. Try again!")
             continue
-        
+
         result = x / y * 100
 
     except ValueError:
