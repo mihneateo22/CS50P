@@ -2,7 +2,7 @@ def main():
     while True:
         try:
             fraction = input("Fraction: ")
-            percentage = converter(fraction)
+            percentage = convert(fraction)
             break
         except ValueError:
             pass
