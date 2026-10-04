@@ -25,14 +25,14 @@ def main():
 
 def try_on(arg1, arg2):
     try:
-        photo = Image.open(arg1)    
+        photo = Image.open(arg1)  # open the photo
     except FileNotFoundError:
         sys.exit("Image not found")
-    shirt = Image.open("shirt.png")
-    size = shirt.size
-    photo = ImageOps.fit(photo, size)
-    photo.paste(shirt, shirt)
-    photo.save(arg2)
+    shirt = Image.open("shirt.png") # open the shirt
+    size = shirt.size # get the shirt's size
+    photo = ImageOps.fit(photo, size) # make the photo the same size as the shirt
+    photo.paste(shirt, shirt) # paste the shirt on the photo
+    photo.save(arg2) # save it to the output file
 
 
 if __name__ == "__main__":
